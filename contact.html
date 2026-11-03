@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Aurora Hotel for questions about rooms, arrivals, amenities and more.">
+    <title>Aurora Hotel | Contact Us</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/forms.css">
+
+<link rel="stylesheet" href="css/interactions.css">
+<script src="vendor/jquery/jquery.min.js" defer></script>
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a class="logo" href="index.html" aria-label="Aurora Hotel home">Aurora Hotel</a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-controls="primaryNav" aria-expanded="false">Menu</button>
+        <nav class="main-nav" id="primaryNav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="rooms.html">Rooms</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="booking.html">Booking</a></li>
+                <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
+                <li><a class="nav-link" href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <a class="button button-small header-cta" href="booking.html">Book a room</a>
+<button id="themeBtn" class="theme-switch" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+</header>
+
+<main id="main-content">
+    <section class="page-hero">
+        <div class="container page-hero-inner form-page-intro">
+            <p class="eyebrow">Contact Aurora Hotel</p>
+            <h1>Send us a message</h1>
+            <p class="lead">Have a question about your stay? Our team is here to help you feel at home.</p>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-form-title">
+        <div class="container booking-layout">
+            <section class="form-shell" aria-labelledby="contact-form-title">
+                <p class="eyebrow">We would love to hear from you</p>
+                <h2 id="contact-form-title">Contact our team</h2>
+                <p id="contact-helper">Tell us what you need help with and check that your contact details are correct.</p>
+
+                <form id="contactForm" class="needs-validation" data-success-target="contactSuccess" novalidate>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label" for="contact-name">Name</label>
+                            <input class="form-control" id="contact-name" name="name" type="text"
+                                   minlength="2" autocomplete="name" required aria-describedby="name-help">
+                            <div id="name-help" class="form-text">Enter at least 2 characters.</div>
+                            <div class="valid-feedback">Name looks good.</div>
+                            <div class="invalid-feedback">Please enter at least 2 characters.</div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label" for="contact-email">Email</label>
+                            <input class="form-control" id="contact-email" name="email" type="email"
+                                   autocomplete="email" required aria-describedby="email-help">
+                            <div id="email-help" class="form-text">Example: guest@example.com</div>
+                            <div class="valid-feedback">Email format is valid.</div>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label" for="contact-message">Message</label>
+                            <textarea class="form-control" id="contact-message" name="message" rows="6"
+                                      minlength="10" maxlength="500" required
+                                      aria-describedby="message-help"></textarea>
+                            <div id="message-help" class="form-text">Write between 10 and 500 characters.</div>
+                            <div class="valid-feedback">Message length is valid.</div>
+                            <div class="invalid-feedback">Please enter a message between 10 and 500 characters.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions-bootstrap">
+                        <button class="btn btn-aurora" type="submit">Review message</button>
+                        <button class="btn btn-aurora-outline" type="reset">Reset</button>
+                    </div>
+
+                    <div id="contactSuccess" class="alert alert-success form-success" role="status" tabindex="-1" hidden>
+                        Your message is ready. To reach the hotel team, please use the contact email listed on this page.
+                    </div>
+                </form>
+            </section>
+
+            <aside class="booking-info" aria-labelledby="contact-details-title">
+                <p class="eyebrow">At your service</p>
+                <h2 id="contact-details-title">Reach our front desk</h2>
+                <div class="info-block">
+                    <h3>Reception</h3>
+                    <p>Available 24 hours a day</p>
+                </div>
+                <div class="info-block">
+                    <h3>Telephone</h3>
+                    <p><a href="tel:+77000000000">+7 700 000 00 00</a></p>
+                </div>
+                <div class="info-block">
+                    <h3>Email</h3>
+                    <p><a href="mailto:meizqmhqn@gmail.com">meizqmhqn@gmail.com</a></p>
+                </div>
+                <div class="info-block">
+                    <h3>Visit us</h3>
+                    <p>Astana IT University</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <section class="footer-about" aria-labelledby="footer-brand">
+            <h2 id="footer-brand" class="footer-logo">Aurora Hotel</h2>
+            <p>Thoughtful stays, warm hospitality and modern comfort in Astana.</p>
+        </section>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <h2 class="footer-heading">Pages</h2>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <section aria-labelledby="footer-contact">
+            <h2 id="footer-contact" class="footer-heading">Contact</h2>
+            <address>Mangilik El<br>Astana, Kazakhstan<br><a href="mailto:meizqmhqn@gmail.com">meizqmhqn@gmail.com</a></address>
+        </section>
+    </div>
+    <div class="container footer-bottom"><p>&copy; 2026 Aurora Hotel. All rights reserved.</p></div>
+</footer>
+<script src="js/forms.js" defer></script>
+</body>
+</html>

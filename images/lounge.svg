@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="t d">
+<title id="t">Breakfast Lounge</title>
+<desc id="d">A calm shared space for breakfast and coffee</desc>
+<defs>
+  <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f4efe7"/>
+    <stop offset="1" stop-color="#d9cbb7"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#wall)"/>
+<rect y="560" width="1200" height="240" fill="#a78867"/>
+<rect x="110" y="220" width="380" height="270" rx="20" fill="#253342"/>
+<rect x="150" y="260" width="300" height="190" rx="18" fill="#f6f2ea"/>
+<rect x="690" y="210" width="330" height="300" rx="30" fill="#7d8f82"/>
+<rect x="650" y="470" width="420" height="80" rx="28" fill="#697c70"/>
+<rect x="530" y="520" width="170" height="40" rx="14" fill="#b8894b"/>
+<rect x="550" y="560" width="24" height="120" fill="#253342"/>
+<rect x="660" y="560" width="24" height="120" fill="#253342"/>
+<circle cx="610" cy="500" r="35" fill="#f0dcb0"/>
+<rect x="95" y="75" width="550" height="110" rx="18" fill="#17212b" opacity=".82"/>
+<text x="125" y="125" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#fff">Breakfast Lounge</text>
+<text x="125" y="165" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#eee7dd">A calm shared space for breakfast and coffee</text>
+</svg>

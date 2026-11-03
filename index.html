@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Discover thoughtful hospitality, comfortable rooms and welcoming spaces at Aurora Hotel in Astana." name="description"/>
+<title>Aurora Hotel | Home</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="css/interactions.css">
+<script src="vendor/jquery/jquery.min.js" defer></script>
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="container nav-wrapper">
+<a aria-label="Aurora Hotel home" class="logo" href="index.html">Aurora Hotel</a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-controls="primaryNav" aria-expanded="false">Menu</button>
+<nav aria-label="Main navigation" class="main-nav" id="primaryNav">
+<ul class="nav-list">
+<li><a aria-current="page" class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="rooms.html">Rooms</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="booking.html">Booking</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li><li><a class="nav-link" href="register.html">Register</a></li></ul>
+</nav>
+<a class="button button-small header-cta" href="booking.html">Book a room</a>
+<button id="themeBtn" class="theme-switch" type="button" aria-pressed="false">Dark mode</button>
+</div>
+</header>
+<main id="main-content">
+<section class="hero">
+<div class="container hero-layout">
+<div class="hero-copy">
+<p class="eyebrow">Comfort • Style • Hospitality</p>
+<h1>Stay comfortably in the heart of the city</h1>
+<p class="lead">
+                    Aurora Hotel offers modern rooms, thoughtful service and a calm atmosphere
+                    for tourists, business travellers, couples and families.
+                </p>
+<div class="action-row">
+<a class="button" href="rooms.html">Explore rooms</a>
+<a class="button button-ghost" href="booking.html">Plan your stay</a>
+</div>
+</div>
+<aside aria-labelledby="hero-highlights" class="hero-panel">
+<h2 id="hero-highlights">Why guests choose us</h2>
+<ul class="check-list">
+<li>Central city location</li>
+<li>Free high-speed Wi-Fi</li>
+<li>24/7 reception support</li>
+<li>Comfortable rooms for different travel needs</li>
+</ul>
+</aside>
+</div>
+</section>
+<section class="section welcome-section" aria-labelledby="welcome-heading">
+  <div class="container welcome-layout">
+    <div>
+      <p class="eyebrow">A personal touch</p>
+      <h2 id="welcome-heading">Welcome to Aurora</h2>
+      <p>Tell us your name and start your visit with a warm welcome.</p>
+    </div>
+    <div class="interaction-panel">
+      <label class="interaction-label" for="guestName">Your name</label>
+      <div class="interaction-inline">
+        <input id="guestName" type="text" autocomplete="given-name" placeholder="Enter your name">
+        <button class="button" id="welcomeBtn" type="button">Say hello</button>
+      </div>
+      <p id="welcomeMessage" role="status" aria-live="polite" class="interaction-message">We look forward to welcoming you.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="home-benefits" class="section">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">Our advantages</p>
+<h2 id="home-benefits">Everything you need for a comfortable stay</h2>
+<p>We focus on practical services, clear information and a calm guest experience.</p>
+</div>
+<div class="feature-flex">
+<article class="feature-card">
+<span aria-hidden="true" class="feature-number">01</span>
+<h3>Prime location</h3>
+<p>Easy access to business centres, restaurants, attractions and public transport.</p>
+</article>
+<article class="feature-card">
+<span aria-hidden="true" class="feature-number">02</span>
+<h3>Modern rooms</h3>
+<p>Comfortable beds, work areas, private bathrooms and climate control.</p>
+</article>
+<article class="feature-card">
+<span aria-hidden="true" class="feature-number">03</span>
+<h3>Guest support</h3>
+<p>Our front desk is available around the clock to assist throughout your stay.</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="featured-rooms" class="section section-alt">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">Featured stays</p>
+<h2 id="featured-rooms">Popular room choices</h2>
+<p>Start with three guest favourites, then explore the full room catalogue.</p>
+</div>
+<div class="card-grid card-grid-three">
+<article class="room-card">
+<img alt="Illustration of a standard hotel room with a double bed" class="card-image" height="800" src="images/standard-room.svg" width="1200"/>
+<div class="card-body">
+<p class="card-kicker">Up to 2 guests</p>
+<h3>Standard Room</h3>
+<p>A practical room for solo travellers and couples who want simple comfort.</p>
+<a class="text-link" href="rooms.html#standard-room">View details <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<article class="room-card">
+<img alt="Illustration of a spacious deluxe hotel room" class="card-image" height="800" src="images/deluxe-room.svg" width="1200"/>
+<div class="card-body">
+<p class="card-kicker">Up to 2 guests</p>
+<h3>Deluxe Room</h3>
+<p>Extra space, upgraded interior and a comfortable seating area.</p>
+<a class="text-link" href="rooms.html#deluxe-room">View details <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<article class="room-card">
+<img alt="Illustration of a junior hotel suite with lounge area" class="card-image" height="800" src="images/junior-suite.svg" width="1200"/>
+<div class="card-body">
+<p class="card-kicker">Up to 3 guests</p>
+<h3>Junior Suite</h3>
+<p>A larger room with a separate lounge zone for longer or more relaxed stays.</p>
+<a class="text-link" href="rooms.html#junior-suite">View details <span aria-hidden="true">→</span></a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="guest-experience" class="section">
+<div class="container split-layout">
+<div>
+<p class="eyebrow">Guest experience</p>
+<h2 id="guest-experience">Simple service, clear expectations</h2>
+<p>
+                    Aurora Hotel is designed around the details guests use every day:
+                    reliable Wi-Fi, clean rooms, clear check-in information and helpful support.
+                </p>
+<a class="button button-outline" href="about.html">Learn about the hotel</a>
+</div>
+<aside class="testimonial" aria-label="Our promise to you">
+<h3>Your stay, your pace</h3>
+<p>Whether you are here to explore the city or focus on business, our team is here to make your time with us feel effortless.</p>
+</aside>
+</div>
+</section>
+<section aria-labelledby="home-cta" class="cta-section">
+<div class="container cta-flex">
+<div>
+<p class="eyebrow eyebrow-light">Plan your stay</p>
+<h2 id="home-cta">Ready to choose a room?</h2>
+</div>
+<a class="button" href="booking.html">Plan your visit</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<section aria-labelledby="footer-brand" class="footer-about">
+<h2 class="footer-logo" id="footer-brand">Aurora Hotel</h2>
+<p>Thoughtful stays, warm hospitality and modern comfort in Astana.</p>
+</section>
+<nav aria-label="Footer navigation" class="footer-nav">
+<h2 class="footer-heading">Pages</h2>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li><li><a href="register.html">Register</a></li></ul>
+</nav>
+<section aria-labelledby="footer-contact">
+<h2 class="footer-heading" id="footer-contact">Contact</h2>
+<address>
+                Astana IT University<br/>
+<a href="tel:+77075762007">+7 707 576 2007</a><br/>
+<a href="mailto:meizqmhqn@gmail.com">meizqmhqn@gmail.com</a>
+</address>
+</section>
+</div>
+<div class="container footer-bottom">
+<p>© 2026 Aurora Hotel. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

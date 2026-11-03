@@ -1,0 +1,115 @@
+.form-page-intro {
+    max-width: 48rem;
+}
+
+.form-shell {
+    min-width: 0;
+    padding: 1.25rem;
+    border: 0.0625rem solid var(--border);
+    border-radius: var(--radius-lg);
+    background: #ffffff;
+    box-shadow: var(--shadow);
+}
+
+.form-shell .form-label,
+.form-shell legend {
+    color: var(--dark);
+    font-weight: 800;
+}
+
+.form-shell .form-control,
+.form-shell .form-select {
+    min-height: 3rem;
+    border-color: #aeb9c2;
+}
+
+.form-shell textarea.form-control {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+.form-shell .form-control:focus,
+.form-shell .form-select:focus,
+.form-shell .form-check-input:focus {
+    border-color: var(--focus);
+    box-shadow: 0 0 0 0.2rem rgba(23, 105, 170, 0.18);
+}
+
+.form-shell .form-text {
+    color: var(--muted);
+}
+
+.form-shell .valid-feedback,
+.form-shell .invalid-feedback {
+    font-weight: 700;
+}
+
+.form-shell .form-check-input:checked {
+    border-color: var(--primary-dark);
+    background-color: var(--primary-dark);
+}
+
+.form-fieldset {
+    margin: 0;
+    padding: 1rem;
+    border: 0.0625rem solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+.form-fieldset legend {
+    float: none;
+    width: auto;
+    margin: 0 0 0.65rem;
+    padding-inline: 0.35rem;
+    font-size: 1rem;
+}
+
+.form-actions-bootstrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.btn-aurora {
+    min-height: 2.9rem;
+    border-color: var(--primary-dark);
+    background: var(--primary-dark);
+    color: #fff;
+    font-weight: 800;
+}
+
+.btn-aurora:hover,
+.btn-aurora:focus-visible {
+    border-color: var(--dark);
+    background: var(--dark);
+    color: #fff;
+}
+
+.btn-aurora-outline {
+    min-height: 2.9rem;
+    border: 0.125rem solid var(--dark);
+    color: var(--dark);
+    font-weight: 800;
+}
+
+.btn-aurora-outline:hover,
+.btn-aurora-outline:focus-visible {
+    background: var(--dark);
+    color: #fff;
+}
+
+.form-success {
+    margin-top: 1rem;
+}
+
+@media (min-width: 48rem) {
+    .form-shell {
+        padding: 2rem;
+    }
+
+    .form-actions-bootstrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

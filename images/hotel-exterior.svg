@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="t d">
+<title id="t">Aurora Hotel exterior</title>
+<desc id="d">A modern city hotel exterior</desc>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#8eb4c8"/>
+    <stop offset="1" stop-color="#e4ecef"/>
+  </linearGradient>
+  <linearGradient id="bld" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e7dfd3"/>
+    <stop offset="1" stop-color="#bda98b"/>
+  </linearGradient>
+</defs>
+<rect width="1400" height="900" fill="url(#sky)"/>
+<circle cx="1120" cy="150" r="80" fill="#f3d7a1"/>
+<rect y="690" width="1400" height="210" fill="#8d9277"/>
+<rect x="250" y="170" width="900" height="560" rx="26" fill="url(#bld)" stroke="#17212b" stroke-width="10"/>
+<rect x="330" y="120" width="740" height="90" rx="18" fill="#17212b"/>
+<text x="700" y="178" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#fff">AURORA HOTEL</text>
+<g fill="#a8c9d8" stroke="#17212b" stroke-width="7">
+  <rect x="340" y="260" width="170" height="120" rx="8"/>
+  <rect x="615" y="260" width="170" height="120" rx="8"/>
+  <rect x="890" y="260" width="170" height="120" rx="8"/>
+  <rect x="340" y="450" width="170" height="120" rx="8"/>
+  <rect x="890" y="450" width="170" height="120" rx="8"/>
+</g>
+<rect x="590" y="430" width="220" height="300" rx="12" fill="#253342"/>
+<rect x="620" y="470" width="70" height="230" fill="#a8c9d8"/>
+<rect x="710" y="470" width="70" height="230" fill="#a8c9d8"/>
+<path d="M0 760 C160 700 260 790 410 740 C560 690 710 800 870 735 C1020 675 1200 760 1400 710 L1400 900 L0 900 Z" fill="#65715a"/>
+</svg>

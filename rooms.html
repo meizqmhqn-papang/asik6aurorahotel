@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Discover rooms and suites at Aurora Hotel, from relaxing city rooms to spacious suites." name="description"/>
+<title>Aurora Hotel | Rooms &amp; Suites</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="css/interactions.css">
+<script src="vendor/jquery/jquery.min.js" defer></script>
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="container nav-wrapper">
+<a aria-label="Aurora Hotel home" class="logo" href="index.html">Aurora Hotel</a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-controls="primaryNav" aria-expanded="false">Menu</button>
+<nav aria-label="Main navigation" class="main-nav" id="primaryNav">
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">Home</a></li><li><a aria-current="page" class="nav-link" href="rooms.html">Rooms</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="booking.html">Booking</a></li>
+<li><a class="nav-link" href="contact.html">Contact</a></li><li><a class="nav-link" href="register.html">Register</a></li></ul>
+</nav>
+<a class="button button-small header-cta" href="booking.html">Book a room</a>
+<button id="themeBtn" class="theme-switch" type="button" aria-pressed="false">Dark mode</button>
+</div>
+</header>
+<main id="main-content">
+<section class="page-hero">
+<div class="container page-hero-inner">
+<p class="eyebrow">Rooms &amp; Suites</p>
+<h1>Find the room that fits your stay</h1>
+<p class="lead">
+                Discover inviting rooms and suites with the space, amenities and comfort you need.
+            </p>
+</div>
+</section>
+<section aria-labelledby="room-catalogue" class="section">
+<div class="container">
+<div class="section-heading">
+<p class="eyebrow">Room catalogue</p>
+<h2 id="room-catalogue">Explore Our Rooms</h2>
+<p>From cosy rooms for two to spacious suites for the whole family, find your perfect match.</p>
+</div>
+<div class="room-search interaction-panel">
+  <label class="interaction-label" for="roomSearch">Find a room</label>
+  <input id="roomSearch" type="search" placeholder="Search by room name (e.g. Deluxe)" autocomplete="off">
+  <div class="search-feedback" role="status" aria-live="polite">
+    <span id="roomCount">6 rooms found</span>
+    <span id="noResults" hidden>No results found</span>
+  </div>
+</div>
+<div class="room-filters" role="group" aria-label="Room categories">
+<button class="filter-btn is-active" type="button" data-category="all" aria-pressed="true">All rooms</button>
+<button class="filter-btn" type="button" data-category="standard" aria-pressed="false">Standard</button>
+<button class="filter-btn" type="button" data-category="deluxe" aria-pressed="false">Deluxe</button>
+<button class="filter-btn" type="button" data-category="suite" aria-pressed="false">Suites</button>
+</div>
+<div class="rooms-grid">
+<article class="room-card" data-category="standard" id="standard-room">
+<img alt="Illustration of a standard hotel room with a double bed" class="card-image" height="800" src="images/standard-room.svg" width="1200"/>
+<div class="card-body">
+<div class="room-meta"><span>2 guests</span><span>24 m²</span></div>
+<h2 class="room-title">Standard Room</h2>
+<p>Comfortable double bed, work desk, Wi-Fi and a private bathroom.</p>
+<ul class="mini-list">
+<li>Queen bed</li>
+<li>Free Wi-Fi</li>
+<li>Air conditioning</li>
+</ul>
+<p class="price">From 32,000 ₸ / night</p>
+<div class="room-actions"><a class="button button-full choose-room" href="booking.html">Choose this room</a><button class="save-room" type="button">Save room</button></div>
+</div>
+</article>
+<article class="room-card" data-category="standard" id="twin-room">
+<img alt="Illustration of a twin hotel room with two separate beds" class="card-image" height="800" src="images/twin-room.svg" width="1200"/>
+<div class="card-body">
+<div class="room-meta"><span>2 guests</span><span>26 m²</span></div>
+<h2 class="room-title">Twin Room</h2>
+<p>Two separate beds, a practical workspace and comfortable lighting.</p>
+<ul class="mini-list">
+<li>Two single beds</li>
+<li>Smart TV</li>
+<li>Tea station</li>
+</ul>
+<p class="price">From 34,000 ₸ / night</p>
+<div class="room-actions"><a class="button button-full choose-room" href="booking.html">Choose this room</a><button class="save-room" type="button">Save room</button></div>
+</div>
+</article>
+<article class="room-card" data-category="deluxe" id="deluxe-room">
+<img alt="Illustration of a deluxe hotel room with extra seating" class="card-image" height="800" src="images/deluxe-room.svg" width="1200"/>
+<div class="card-body">
+<div class="room-meta"><span>2 guests</span><span>32 m²</span></div>
+<h2 class="room-title">Deluxe Room</h2>
+<p>More space, a king-size bed and an additional sitting area.</p>
+<ul class="mini-list">
+<li>King bed</li>
+<li>Seating area</li>
+<li>Mini fridge</li>
+</ul>
+<p class="price">From 45,000 ₸ / night</p>
+<div class="room-actions"><a class="button button-full choose-room" href="booking.html">Choose this room</a><button class="save-room" type="button">Save room</button></div>
+</div>
+</article>
+<article class="room-card" data-category="deluxe" id="family-room">
+<img alt="Illustration of a family hotel room with additional space" class="card-image" height="800" src="images/family-room.svg" width="1200"/>
+<div class="card-body">
+<div class="room-meta"><span>4 guests</span><span>38 m²</span></div>
+<h2 class="room-title">Family Room</h2>
+<p>Designed for families who need more sleeping space and storage.</p>
+<ul class="mini-list">
+<li>Up to four guests</li>
+<li>Extra storage</li>
+<li>Family seating area</li>
+</ul>
+<p class="price">From 52,000 ₸ / night</p>
+<div class="room-actions"><a class="button button-full choose-room" href="booking.html">Choose this room</a><button class="save-room" type="button">Save room</button></div>
+</div>
+</article>
+<article class="room-card" data-category="suite" id="junior-suite">
+<img alt="Illustration of a junior suite with a lounge zone" class="card-image" height="800" src="images/junior-suite.svg" width="1200"/>
+<div class="card-body">
+<div class="room-meta"><span>3 guests</span><span>45 m²</span></div>
+<h2 class="room-title">Junior Suite</h2>
+<p>A spacious sleeping area with a separate lounge zone for relaxing.</p>
+<ul class="mini-list">
+<li>King bed</li>
+<li>Lounge area</li>
+<li>Premium amenities</li>
+</ul>
+<p class="price">From 68,000 ₸ / night</p>
+<div class="room-actions"><a class="button button-full choose-room" href="booking.html">Choose this room</a><button class="save-room" type="button">Save room</button></div>
+</div>
+</article>
+<article class="room-card" data-category="suite" id="presidential-suite">
+<img alt="Illustration of a large presidential hotel suite" class="card-image" height="800" src="images/presidential-suite.svg" width="1200"/>
+<div class="card-body">
+<div class="room-meta"><span>4 guests</span><span>75 m²</span></div>
+<h2 class="room-title">Presidential Suite</h2>
+<p>Our largest accommodation with premium comfort and added living space.</p>
+<ul class="mini-list">
+<li>Separate bedroom</li>
+<li>Dining area</li>
+<li>Premium city-view layout</li>
+</ul>
+<p class="price">From 110,000 ₸ / night</p>
+<div class="room-actions"><a class="button button-full choose-room" href="booking.html">Choose this room</a><button class="save-room" type="button">Save room</button></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-alt" aria-labelledby="favourites-heading">
+  <div class="container favourites-layout">
+    <div>
+      <p class="eyebrow">Make it yours</p>
+      <h2 id="favourites-heading">My room wishlist</h2>
+      <p>Save room ideas for your next visit. Add a room name or anything you would like to remember.</p>
+    </div>
+    <div class="interaction-panel">
+      <form id="favouritesForm" novalidate>
+        <label class="interaction-label" for="favouriteInput">Add to your wishlist</label>
+        <div class="interaction-inline">
+          <input id="favouriteInput" type="text" placeholder="e.g. Deluxe Room" autocomplete="off">
+          <button class="button" type="submit">Add</button>
+        </div>
+        <p id="favouritesError" class="input-help" role="alert" hidden></p>
+      </form>
+      <div class="wishlist-header"><h3>Saved ideas</h3><span id="favouritesCount" role="status" aria-live="polite">0 items</span></div>
+      <ul id="favouritesList" class="favourites-list"></ul>
+      <p id="favouritesEmpty" class="wishlist-empty">No saved rooms yet.</p>
+      <p id="wishlistNotice" class="wishlist-notice" role="status" aria-live="polite" hidden></p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="room-amenities" class="section section-alt">
+<div class="container amenities-layout">
+<div>
+<p class="eyebrow">Included comfort</p>
+<h2 id="room-amenities">Amenities in every room</h2>
+<p>These core services are available across the room catalogue.</p>
+</div>
+<div class="amenities-grid">
+<article class="amenity"><h3>Wi-Fi</h3><p>High-speed access for work and entertainment.</p></article>
+<article class="amenity"><h3>Smart TV</h3><p>Simple in-room entertainment.</p></article>
+<article class="amenity"><h3>Bathroom</h3><p>Private bathroom with essential toiletries.</p></article>
+<article class="amenity"><h3>Climate control</h3><p>Adjustable room temperature.</p></article>
+<article class="amenity"><h3>Housekeeping</h3><p>Daily room care during your stay.</p></article>
+<article class="amenity"><h3>Reception</h3><p>Support available 24 hours a day.</p></article>
+</div>
+</div>
+</section>
+<section aria-labelledby="room-policies" class="section">
+<div class="container split-layout">
+<div>
+<p class="eyebrow">Before you arrive</p>
+<h2 id="room-policies">Simple stay information</h2>
+<p>Check-in begins at 14:00 and check-out is until 12:00. Early arrival requests depend on availability.</p>
+</div>
+<aside class="info-card">
+<h3>Need help choosing?</h3>
+<p>Tell us your preferred dates and room type, and plan a stay that works for you.</p>
+<a class="button button-outline" href="booking.html">Go to booking</a>
+</aside>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<section aria-labelledby="footer-brand" class="footer-about">
+<h2 class="footer-logo" id="footer-brand">Aurora Hotel</h2>
+<p>Thoughtful stays, warm hospitality and modern comfort in Astana.</p>
+</section>
+<nav aria-label="Footer navigation" class="footer-nav">
+<h2 class="footer-heading">Pages</h2>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li><li><a href="register.html">Register</a></li></ul>
+</nav>
+<section aria-labelledby="footer-contact">
+<h2 class="footer-heading" id="footer-contact">Contact</h2>
+<address>
+                Astana IT University<br/>
+<a href="tel:+77075762007">+7 707 576 2007</a><br/>
+<a href="mailto:meizqmhqn@gmail.com">meizqmhqn@gmail.com</a>
+</address>
+</section>
+</div>
+<div class="container footer-bottom">
+<p>© 2026 Aurora Hotel. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
