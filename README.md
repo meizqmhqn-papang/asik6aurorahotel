@@ -61,6 +61,8 @@ The Assignment 5 contribution mapping is: Meizamkhan — welcome, theme and wish
 
 ## Repository and publishing
 
+rep: https://github.com/meizqmhqn-papang/asik6aurorahotel/
+live web: https://meizqmhqn-papang.github.io/asik6aurorahotel/ 
 
 
 These are previous-version references; publishing the final archive to the repository is a separate action. The archive contains the final local website, but cannot publish itself.
